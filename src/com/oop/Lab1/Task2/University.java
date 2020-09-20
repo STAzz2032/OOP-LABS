@@ -1,3 +1,5 @@
+//MAIN CLASS
+
 package com.oop.Lab1.Task2;
 
 import java.util.*;
