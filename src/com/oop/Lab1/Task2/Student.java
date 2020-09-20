@@ -1,5 +1,7 @@
 package com.oop.Lab1.Task2;
+
 import java.util.*;
+
 public class Student {
     static Scanner in = new Scanner(System.in);
     public String name;
@@ -8,34 +10,30 @@ public class Student {
     public int age;
     public double media;
 
-    public Student()
-    {
+    public Student() {
         System.out.print(".Student name: ");
-        name=in.next();
+        name = in.next();
         System.out.print("  Age: ");
-        age=in.nextInt();
+        age = in.nextInt();
         System.out.print("  Number of courses: ");
         n_cour = in.nextInt();
-        media=0;
+        media = 0;
         System.out.println("  Courses: ");
-        for (int i = 0; i < n_cour; i++)
-        {
-            obj[i]=new Course();
+        for (int i = 0; i < n_cour; i++) {
+            obj[i] = new Course();
             media += obj[i].mark;
         }
-        media = media/ n_cour;
-        System.out.println("Media : "+media);
+        media = media / n_cour;
+        System.out.println("Media : " + media);
         System.out.println();
 
     }
-    public static void main(String[] args) {
-        System.out.print("Number of Students: ");
-        int nr= in.nextInt();
-        Student[] s = new Student[nr];
-        for (int i = 0; i < nr; i++)
-        {
-            System.out.print(i+1);
-            s[i]=new Student();
-        }
+
+    public void ShowStudent() {
+        System.out.println(" Student name: " + name);
+        System.out.println(" Age: " + age);
+        System.out.println(" Media: " + media);
+        System.out.println();
     }
+
 }
