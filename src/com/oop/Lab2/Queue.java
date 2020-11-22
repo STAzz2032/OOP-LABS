@@ -8,10 +8,6 @@ public class Queue {
     private class Node {
         int data;
         Node next;
-        public int print()
-        {
-            return data;
-        }
     }
 
     public Queue()
