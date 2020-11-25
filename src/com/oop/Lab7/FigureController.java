@@ -4,10 +4,7 @@ import java.text.DecimalFormat;
 
 public class FigureController {
 
-    public FigureController()
-    {
-
-    }
+    public FigureController() {}
     
     public Figure[] add_figure(int n, Figure[] myarray, Figure ele)
     {
